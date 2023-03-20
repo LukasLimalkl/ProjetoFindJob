@@ -1,0 +1,42 @@
+    <div class="text">
+        {{#if search}}
+
+            <h1 class="top-title">Buscando cagas que contem :  {{search}}</h1>
+
+        {{eslse}}
+            <h1 class="top-title">Encontre o emprego do seus sonhos.</h1>
+        {{/if}}
+            <p class="top-sub">As melhores vagas na area de tecnologia e home oficce é aqui! </p>
+
+    </div>
+        
+
+    <div class="conteiner-top">
+            <form class="input-top" action="/" method="GET">
+                
+                <input type="text" class="job" name="job" placeholder="Procure uma vaga ">
+                <a href="" class="search-btn">
+                    
+                    <img src="/img/lupa.svg" class="lupa" alt="lupa">
+                </a>
+            </form>
+    </div>
+
+
+
+
+    <main class="cards">
+        {{#each jobs}}
+        <section class="card">
+            <div class="icon">
+                <img src="/img/company.svg" alt="Company">
+            </div>
+            <h3>{{dataValues.company}}</h3>
+            <span>{{dataValues.title}}</span>
+            <span>R${{dataValues.salary}}</span>
+            <a href="/jobs/view/{{dataValues.id}}">Ver Vaga</a>
+        </section>
+        {{/each}}
+       
+    </main>
+    <script src="./mobile-navbar.js"></script>

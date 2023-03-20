@@ -1,0 +1,13 @@
+
+<div class="job-view">
+    <div class="card-view">
+        <div class="text-job">
+            <img src="/img/company.svg" alt="company">
+            <h1 class="view-text">{{job.dataValues.title}}</h1>
+            <p class="view-text">Quem eles estao buscando :</p>
+            <p class="view-text">{{job.dataValues.description}}</p>
+            <p class="view-text">O salário oferecido é de: <b>{{job.dataValues.salary}}</b></p>
+            <p class="view-text">Se tiver interesse entre em trabalhar na empresa <span>{{job.dataValues.company}}</span>, entre em contato com o email: <a href="mail:to{{job.dataValues.email}}">{{job.dataValues.email}} </a></p>
+        </div>
+    </div>
+</div>
